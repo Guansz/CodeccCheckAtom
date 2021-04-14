@@ -49,7 +49,6 @@
     import { atomMixin }from 'bkci-atom-components'
     import { getQueryParams } from '@/utils/util'
     import Basic from '@/components/Basic'
-    import Report from '@/components/Report'
     import Scan from '@/components/Scan'
     import Shield from '@/components/Shield'
     import Async from '@/components/Async'
@@ -59,7 +58,6 @@
         mixins: [atomMixin],
         components: {
             Basic,
-            Report,
             Scan,
             Shield,
             Async
@@ -68,7 +66,6 @@
             return {
                 panels: [
                     { name: 'basic', label: '基础设置' },
-                    { name: 'report', label: '通知报告' },
                     { name: 'scan', label: '扫描配置' },
                     { name: 'shield', label: '路径屏蔽' }
                 ],
